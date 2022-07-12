@@ -22,9 +22,22 @@ echo $root;*/
 
 //carrega um usuário usando o login e a senha
 
+//$usuario = new Usuario();
+//$usuario->login("root", "!@#$%");
+
+//echo $usuario;
+
+//$aluno = new Usuario("aluno", "@alun0");
+
+//$aluno->insert();
+
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("root", "!@#$%");
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "!@#$%¨&*");
 
 echo $usuario;
-
  ?>
